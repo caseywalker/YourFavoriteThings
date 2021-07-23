@@ -37,6 +37,21 @@ namespace YourFavoriteThings
       hemingways.Info();
       hemingways.Order();
 
+      var orangeBeach = new Vacation("Orange Beach", "Alabama", "Beach");
+      var gatlinburg = new Vacation("Gatlinburg", "Tennessee", "Mountains");
+
+      orangeBeach.Destination();
+      orangeBeach.Type();
+
+      gatlinburg.Destination();
+      gatlinburg.Type();
+
+      var myVehicle = new Vehicle(2016, "Ford", "F150");
+      var dreamVehicle = new Vehicle(2021, "Ford", "Bronco");
+
+      myVehicle.Fuel(36);
+      dreamVehicle.Purchase(50000);
+
     }
   }
 }
