@@ -9,21 +9,19 @@ namespace YourFavoriteThings
     {
       Console.WriteLine("Your favorite things");
 
-      var pizza = new Food();
-      pizza.Name = "Pizza";
-      pizza.Meal = "Dinner";
+      var pepperoniPizza = new Pizza();
+      pepperoniPizza.Toppings = "Pepperoni";
+      pepperoniPizza.BakeTime = 20;
 
-      var tacos = new Food
-      {
-        Name = "Tacos",
-        Meal = "Lunch"
-      };
+      pepperoniPizza.Cook(20);
 
-      tacos.Cook();
-      tacos.Eat();
+      var taco = new Tacos(TacoType.Fajitas);
+      taco.TacoInfo();
 
-      pizza.Cook();
-      pizza.Eat();
+      var wings = new Wings(WingType.Traditional, WingFlavor.Hot, 20);
+      wings.Spicy();
+
+
 
       var salvos = new Restaurant("Salvo's", "Smyrna", "Pizza");
       salvos.Number = "555-5555";
