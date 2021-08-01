@@ -35,20 +35,23 @@ namespace YourFavoriteThings
       hemingways.Info();
       hemingways.Order();
 
-      var orangeBeach = new Vacation("Orange Beach", "Alabama", "Beach");
-      var gatlinburg = new Vacation("Gatlinburg", "Tennessee", "Mountains");
+      var orangeBeach = new Beach("Orange Beach", "Alabama", "Beach", true);
+      var gatlinburg = new Mountains("Gatlinburg", "Tennessee", "Mountains", false);
+      var cruise = new Cruise("Disney Cruise", "Florida", "Cruise", false);
 
-      orangeBeach.Destination();
-      orangeBeach.Type();
+      orangeBeach.Activities();
+      gatlinburg.Activities();
+      cruise.Requirements();
 
-      gatlinburg.Destination();
-      gatlinburg.Type();
-
-      var myVehicle = new Vehicle(2016, "Ford", "F150");
-      var dreamVehicle = new Vehicle(2021, "Ford", "Bronco");
+      var myVehicle = new Truck(2016, "Ford", "F150");
+      var dreamVehicle = new SUV(2021, "Ford", "Bronco", true);
+      var dmc = new Car(1982, "DMC", "Delorean");
 
       myVehicle.Fuel(36);
       dreamVehicle.Purchase(50000);
+      myVehicle.Tow(5000);
+      dreamVehicle.Offroad();
+      dmc.TimeTravel();
 
     }
   }

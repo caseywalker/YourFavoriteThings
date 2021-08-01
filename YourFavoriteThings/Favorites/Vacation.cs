@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace YourFavoriteThings.Favorites
 {
-  class Vacation
+  abstract class Vacation
   {
     public string Name { get; set; }
     public string Location { get; set; }
